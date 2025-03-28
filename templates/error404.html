@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Page Not Found{% endblock %}
+{% block head %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:700,900" rel="stylesheet">
+
+    <!-- Custom stylesheet -->
+    <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+{% endblock %}
+
+{% block navbar %}{% endblock %}
+
+{% block content %}
+    <div id="notfound">
+        <div class="notfound">
+            <div class="notfound-404">
+                <h1>404</h1>
+            </div>
+            <h2>Oops! This Page Could Not Be Found</h2>
+            <p>Sorry, but the page you are looking for either: </p>
+            <ul>
+                <li>Does not exist</li>
+                <li>Has been removed</li>
+                <li>Had its name changed</li>
+                <li>Or is temporarily unavailable</li>
+            </ul>
+            <p>We apologise for any inconvenience caused.</p>
+            <a href="{{url_for('home')}}">
+                <!--House icon SVG-->
+                <svg width="16px" height="16px" style="margin-inline-end: 0.25em;" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0L0 6V8H1V15H4V10H7V15H15V8H16V6L14 4.5V1H11V2.25L8 0ZM9 10H12V13H9V10Z" fill="#fff"></path>
+                </svg>
+                Go To Homepage
+            </a>
+            <a href="javascript:history.back();">
+                <!--Return icon SVG-->
+                <svg width="16px" height="16px" style="margin-inline-end: 0.25em;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM13.92 16.13H9C8.59 16.13 8.25 15.79 8.25 15.38C8.25 14.97 8.59 14.63 9 14.63H13.92C15.2 14.63 16.25 13.59 16.25 12.3C16.25 11.01 15.21 9.97 13.92 9.97H8.85L9.11 10.23C9.4 10.53 9.4 11 9.1 11.3C8.95 11.45 8.76 11.52 8.57 11.52C8.38 11.52 8.19 11.45 8.04 11.3L6.47 9.72C6.18 9.43 6.18 8.95 6.47 8.66L8.04 7.09C8.33 6.8 8.81 6.8 9.1 7.09C9.39 7.38 9.39 7.86 9.1 8.15L8.77 8.48H13.92C16.03 8.48 17.75 10.2 17.75 12.31C17.75 14.42 16.03 16.13 13.92 16.13Z" fill="#fff"></path>
+                </svg>
+                Return to Previous Page
+            </a>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}{% endblock %}

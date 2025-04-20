@@ -23,9 +23,9 @@ The original tutorial was buggy however, with issues being:
 
 1. The "View Users/Customers" pages causing a 500 Server Error when accessing it before the database is created
 2. The alert pop-ups for creating, updating, and deleting entries had some styling issues. For example,
-  a. The pop-ups were too close to the navigation bar
-  b. Closing animations were abrupt
-  c. The original HTML for the pop-ups were outdated, causing the close button to render incorrectly
+   - The pop-ups were too close to the navigation bar
+   - Closing animations were abrupt
+   - The original HTML for the pop-ups were outdated, causing the close button to render incorrectly
 
 Annoyed by these minor inconveniences, I took it upon myself to fix the Web App over my school holidays. And now, it is done! 🥳
 

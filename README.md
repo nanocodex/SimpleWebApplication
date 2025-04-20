@@ -1,7 +1,6 @@
 # SimpleWebApplication
 A Web Application for a Library Loan System using Flask, Jinja, Shelve, and Bootstrap.
 
-[//]: # (TODO: Explain what this Web App Does)
 ## Description
 A simple database app for a Library Loan system, allowing you to:
 
@@ -17,12 +16,11 @@ Two kinds of objects:
 
 Customers are a subclass of Users, requiring more data fields to create.
 
-[//]: # (TODO: Explain why this Web App was made)
+
 ## Purpose
 This Web App was originally made following a practical lesson on creating a basic Web App for my Application Development module in Year 1.
 
 
-[//]: # (TODO: Explain how to launch Web App locally)
 ## Local Deployment
 Open Command Prompt and run the following commands:
 1. `python -m venv .venv` (for Windows) / `python3 -m venv .venv` (for macOS)

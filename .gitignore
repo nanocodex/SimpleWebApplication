@@ -173,5 +173,6 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-# Database files -- they'll be re-created the first time the Web Application is ran, under the "db" directory
+# Database files
+#   They'll be re-created the first time the Web Application is ran, under the "db" directory
 db/
